@@ -54,6 +54,7 @@ header.carousel .fill {
     display: block;
     font-size: 50px;
     line-height: 50px;
+     color: rgb(24,159,43);
 }
 
 .price sup {

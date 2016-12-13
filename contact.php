@@ -67,7 +67,7 @@
                 <p><i class="fa fa-phone"></i> 
                     <abbr title="Phone">P</abbr>: (046) 9558144</p>
                 <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">nfo@shootingstyle.ie</a>
+                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">info@shootingstyle.ie</a>
                 </p>
             </div>
         </div>

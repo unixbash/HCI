@@ -45,19 +45,19 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://i.imgur.com/UY4xAbR.jpg');"></div>
+                <div class="fill" style="background-image:url('./images/cover.jpg');"></div>
                 <div class="carousel-caption">
                     <h2>Caption 1</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://i.imgur.com/UY4xAbR.jpg');"></div>
+                <div class="fill" style="background-image:url('./images/cover.jpg');"></div>
                 <div class="carousel-caption">
                     <h2>Caption 2</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://i.imgur.com/UY4xAbR.jpg');"></div>
+                <div class="fill" style="background-image:url('./images/cover.jpg');"></div>
                 <div class="carousel-caption">
                     <h2>Caption 3</h2>
                 </div>
@@ -81,37 +81,139 @@
         <!-- Portfolio Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Products</h2>
+                <h2 class="page-header">Featured Products</h2>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <div class="item">
+                    <div class="item-inner-product">
+                        <div class="product-image">
+                            <a class="product_img_link product_image" href="./index.php" itemprop="url"> 
+                            <img src="https://southlandarchery.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/a/sas-762bs.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                            </a>                                          
+                        </div>
+                        <h2 itemprop="name" class="product-name"> <a class="product-name" href="./index.php" itemprop="url" > A pretty sweet bow </a></h2>
+                        <div class="content_price left" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <span itemprop="price" class="price product-price" > € 419.99 </span>
+                            <meta itemprop="priceCurrency" content="0" />
+                        </div>
+                        <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
+                        <div class="actions">
+                            <div class="button-container">
+                                <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                            </div>                                           
+                        </div>
+                    </div>
+                    <div class="icon"></div>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <div class="item">
+                    <div class="item-inner-product">
+                        <div class="product-image">
+                            <a class="product_img_link product_image" href="./index.php" itemprop="url"> 
+                            <img src="http://bestcompoundbowsource.com/wp-content/uploads/2013/08/Bear-Archery-Legion.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                            </a>                                          
+                        </div>
+                        <h2 itemprop="name" class="product-name"> <a class="product-name" href="./index.php" itemprop="url" > Sneaky Bow </a></h2>
+                        <div class="content_price left" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <span itemprop="price" class="price product-price" > € 639.99 </span>
+                            <meta itemprop="priceCurrency" content="0" />
+                        </div>
+                        <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
+                        <div class="actions">
+                            <div class="button-container">
+                                <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                            </div>                                           
+                        </div>
+                    </div>
+                    <div class="icon"></div>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <div class="item">
+                    <div class="item-inner-product">
+                        <div class="product-image">
+                            <a class="product_img_link product_image" href="./index.php" itemprop="url"> 
+                            <img src="https://s-media-cache-ak0.pinimg.com/originals/e7/e4/f9/e7e4f93ac0467fdfccd83860fc5b5956.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                            </a>                                          
+                        </div>
+                        <h2 itemprop="name" class="product-name"> <a class="product-name" href="./index.php" itemprop="url" > Purple Lightning </a></h2>
+                        <div class="content_price left" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <span itemprop="price" class="price product-price" > € 519.99 </span>
+                            <meta itemprop="priceCurrency" content="0" />
+                        </div>
+                        <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
+                        <div class="actions">
+                            <div class="button-container">
+                                <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                            </div>                                           
+                        </div>
+                    </div>
+                    <div class="icon"></div>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <div class="item">
+                    <div class="item-inner-product">
+                        <div class="product-image">
+                            <a class="product_img_link product_image" href="./index.php" itemprop="url"> 
+                            <img src="http://www.bestrecurvebowguide.com/wp-content/uploads/2013/08/super-kodiak.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                            </a>                                          
+                        </div>
+                        <h2 itemprop="name" class="product-name"> <a class="product-name" href="./index.php" itemprop="url" > Boring bow </a></h2>
+                        <div class="content_price left" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <span itemprop="price" class="price product-price" > € 199.99 </span>
+                            <meta itemprop="priceCurrency" content="0" />
+                        </div>
+                        <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
+                        <div class="actions">
+                            <div class="button-container">
+                                <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                            </div>                                           
+                        </div>
+                    </div>
+                    <div class="icon"></div>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <div class="item">
+                    <div class="item-inner-product">
+                        <div class="product-image">
+                            <a class="product_img_link product_image" href="./index.php" itemprop="url"> 
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/31660vV4llL._SY300_.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                            </a>                                          
+                        </div>
+                        <h2 itemprop="name" class="product-name"> <a class="product-name" href="./index.php" itemprop="url" > Stick & String </a></h2>
+                        <div class="content_price left" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <span itemprop="price" class="price product-price" > € 49.99 </span>
+                            <meta itemprop="priceCurrency" content="0" />
+                        </div>
+                        <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
+                        <div class="actions">
+                            <div class="button-container">
+                                <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                            </div>                                           
+                        </div>
+                    </div>
+                    <div class="icon"></div>
+                </div>
             </div>
             <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
+                <div class="item">
+                    <div class="item-inner-product">
+                        <div class="product-image">
+                            <a class="product_img_link product_image" href="./index.php" itemprop="url"> 
+                            <img src="https://xboxliveexperts.files.wordpress.com/2010/07/javelin1.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                            </a>                                          
+                        </div>
+                        <h2 itemprop="name" class="product-name"> <a class="product-name" href="./index.php" itemprop="url" > Boom Bow </a></h2>
+                        <div class="content_price left" itemprop="offers" itemscope itemtype="http://schema.org/Offer"> <span itemprop="price" class="price product-price" > € 125,999.99 </span>
+                            <meta itemprop="priceCurrency" content="0" />
+                        </div>
+                        <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
+                        <div class="actions">
+                            <div class="button-container">
+                                <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                            </div>                                           
+                        </div>
+                    </div>
+                    <div class="icon"></div>
+                </div>
             </div>
         </div>
         <!-- /.row -->       
