@@ -28,7 +28,7 @@
                     <li>
                         <div id="search_block_top">
                                     <div id="search_block_top_inner">
-                                        <form id="searchbox" method="get" action="http://thearcheryshop.co.uk/search">
+                                        <form id="searchbox" method="get" action="./results.php">
                                             <div class="form-search">
                                                 <input type="hidden" name="controller" value="search" />
                                                 <input type="hidden" name="orderby" value="position" />
