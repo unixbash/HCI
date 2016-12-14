@@ -30,9 +30,6 @@
                             <div id="search_block_top_inner">
                                 <form id="searchbox" method="get" action="./results.php">
                                     <div class="form-search">
-                                        <input type="hidden" name="controller" value="search" />
-                                        <input type="hidden" name="orderby" value="position" />
-                                        <input type="hidden" name="orderway" value="desc" />
                                         <input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Search" value="" />
                                         <button type="submit" name="submit_search" class="btn btn-default button-search"> <i class="fa fa-search "></i><span>Search</span> </button>
                                     </div>
