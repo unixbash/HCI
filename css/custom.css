@@ -1,0 +1,10 @@
+.padded15 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.nav-font {
+	font-size: 18pt;
+}
+.nav-font li a {
+	color: #B51D18 !important;
+}
