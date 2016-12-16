@@ -14,16 +14,16 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right nav-font">
                     <li>
-                        <a href="about.html">Products</a>
+                        <a href="products.php">Products</a>
                     </li>
                     <li>
-                        <a href="services.html">Account </a>
+                        <a href="account.php">Account </a>
                     </li>
                     <li>
-                        <a href="contact.php">Contact</a>
+                            <a  href="contact.php">Contact</a>
                     </li>
                     <li>
-                        <a href="contact.html">Basket</a>
+                            <a  href="basket.php">Basket</a>
                     </li>
                     <li>
                         <div id="search_block_top">

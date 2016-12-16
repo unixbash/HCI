@@ -4,9 +4,9 @@
         <label for="newsletter">Sign Up for Our Newsletter:</label> 
     </div>
     <div class="input-box">             
-       <input type="email" placeholder="Enter your email address..." autocapitalize="off" autocorrect="off" spellcheck="false" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text" />
+       <input type="email" placeholder="Enter your email address..." name="email" id="newsletter" title="Sign up for our newsletter" class="input-text" />
     </div>
-    <div class="actions">
+    <div class="footer-actions">
         <button type="submit" title="Subscribe" class="button news-button"><span><span><img src="./images/mail-icon.png" class="icon-email" alt="email icon" ></img></span></span></button>
     </div>
     

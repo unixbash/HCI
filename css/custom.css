@@ -126,7 +126,12 @@ form#searchbox {
 
 
 .actions {
-    float: left;
+    width: 50px;
+    padding-top: 10px;
+}
+
+.footer-actions {
+    float:left;
     width: 50px;
     padding-top: 10px;
 }
@@ -139,7 +144,7 @@ form#searchbox {
 .button {
     background: #B51D18;
     display: inline-block;
-    padding: 7px 15px;
+    padding: 10px 15px;
     border: 0;
     color: #FFFFFF;
     font-size: 14px;
@@ -182,6 +187,71 @@ form#searchbox {
     margin-left: 5px;
 }
 
+.total-table {
+    font-family: arial, sans-serif;
+    float:right;  
+}
+
+.total-table td {
+    text-align: left;
+    padding: 15px;
+}
+
+.order-table{
+    height:500px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.order-table tbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.order-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.order-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.order-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.basket-table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.basket-table tbody {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.basket-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.basket-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.basket-table tbody>tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
 .links {
     float: right;
     margin: 0px;
@@ -200,6 +270,14 @@ form#searchbox {
 .icon-circletwitter {
     width: 40px;
     height: 40px;
+}
+
+.banner-img{
+    background-color:#222;
+}
+
+.banner-container {
+    background-color:#222;
 }
 
 @media (max-width:768px) {
@@ -221,11 +299,35 @@ form#searchbox {
     }
 }
 
+@media (max-width: 1200px){
+    .col-sm-12{
+        float: none;
+    }
+}
+
+@media (min-width: 1200px){
+    .col-sm-12{
+        float: left;
+    }
+}
+
 @media (max-width: 1070px) {
     .input-box {
     width: 300px;
     padding-left: 5px;
     }
+}
+
+@media (max-width: 1045px) {
+    .nav-font {
+    font-size: 12pt;
+    }
+    
+    .nav>li {
+    position: relative;
+    display: block;
+    padding-right: 15px;
+}
 }
 
 @media (max-width: 860px) {
@@ -243,7 +345,29 @@ form#searchbox {
 }
 }
 
+@media (min-width: 767px)
+{
+    .text-links {
+    padding-top: 28px;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .text-links {
+    padding-top: 15px;
+    padding-left: 12px;
+    }
+}
+
+
+
+
 @media (max-width: 560px) {
+    .subscribe-form-header label {
+    font-size: 18px;
+    }
+    
     .social-icons{
         padding-left: 45px;
     }

@@ -1983,26 +1983,10 @@ pre code {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    width: 100%;
 }
 
-@media (min-width:768px) {
-    .container {
-        width: 750px
-    }
-}
-
-@media (min-width:992px) {
-    .container {
-        width: 970px
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        width: 1170px
-    }
-}
 
 .container-fluid {
     padding-right: 15px;
@@ -2633,7 +2617,6 @@ pre code {
     .col-lg-1,
     .col-lg-10,
     .col-lg-11,
-    .col-lg-12,
     .col-lg-2,
     .col-lg-3,
     .col-lg-4,
@@ -2657,7 +2640,7 @@ pre code {
         width: 75%
     }
     .col-lg-8 {
-        width: 66.66666667%
+        width: 40%
     }
     .col-lg-7 {
         width: 58.33333333%
@@ -2669,7 +2652,7 @@ pre code {
         width: 41.66666667%
     }
     .col-lg-4 {
-        width: 33.33333333%
+        width: 50%
     }
     .col-lg-3 {
         width: 25%
