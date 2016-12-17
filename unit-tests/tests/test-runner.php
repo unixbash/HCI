@@ -83,14 +83,14 @@ class TestIndexPage extends WebTestCase {
     }
 
 
-    function checkSingleProductLinks($indexPageAddress, $altText, $descriptionText, $productPageAddress, $basketID, $basketPageAddress){
-        $this->get($indexPageAddress); #ensure we're starting on the index page
+    function checkSingleProductLinks($startPageAddress, $altText, $descriptionText, $productPageAddress, $basketID, $basketPageAddress){
+        $this->get($startPageAddress); #ensure we're starting on the index page
         $this->assertText($altText);  #test the alt text
         $this->assertText($descriptionText); #test the description
         $this->clickLink($altText); #click the image link to the sample product description page
         $this->assertEqual($this->getUrl(),$productPageAddress);
         $this->assertResponse(200);
-        $this->get($indexPageAddress); #go back to the index page
+        $this->get($startPageAddress); #go back to the index page
         $this->clickLinkById($basketID); #link for adding the product to a basket
         $this->assertEqual($this->getUrl(),$basketPageAddress);
         $this->assertResponse(200);
@@ -116,6 +116,40 @@ class TestIndexPage extends WebTestCase {
         $this->checkSingleProductLinks('http://student.computing.dcu.ie/~oconnb47/index.php', 'FGM-148 Javelin automatic infrared guidance fire and forget anti-tank missile launcher', 'Boom Bow','http://student.computing.dcu.ie/~oconnb47/sample-product.php', '2805', 'http://student.computing.dcu.ie/~oconnb47/basket.php');
     }
 
+}
+
+class TestProductsPage extends WebTestCase {
+    function checkSingleProductCategoryLinks($startPageAddress, $altText, $CategoryText, $productPageAddress){
+        $this->get($startPageAddress); #ensure we're starting on the index page
+        $this->assertText($altText);  #test the alt text
+        $this->clickLink($altText); #click the image link to the sample product description page
+        $this->assertEqual($this->getUrl(),$productPageAddress);
+        $this->assertResponse(200);
+        $this->get($startPageAddress); #go back to the index page
+        $this->clickLink($CategoryText); #link for adding the product to a basket
+        $this->assertEqual($this->getUrl(),$productPageAddress);
+        $this->assertResponse(200);
+    }
+
+    function testAllProductCategoryLinks(){
+        #Category 1
+        $this->checkSingleProductCategoryLinks('http://student.computing.dcu.ie/~oconnb47/products.php', 'Recurve Bow', 'Recurve Bows', 'http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+
+        #Category 2
+        $this->checkSingleProductCategoryLinks('http://student.computing.dcu.ie/~oconnb47/products.php', 'Arrow for archery', 'Arrows', 'http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+
+        #Category 3
+        $this->checkSingleProductCategoryLinks('http://student.computing.dcu.ie/~oconnb47/products.php', 'Compound Bow', 'Compounds', 'http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+
+        #Category 4
+        $this->checkSingleProductCategoryLinks('http://student.computing.dcu.ie/~oconnb47/products.php', 'Target Faces', 'Target Faces', 'http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+
+        #Category 5
+        $this->checkSingleProductCategoryLinks('http://student.computing.dcu.ie/~oconnb47/products.php', 'Bow Accessories', 'Accessories', 'http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+
+        #Category 6
+        $this->checkSingleProductCategoryLinks('http://student.computing.dcu.ie/~oconnb47/products.php', 'Recurve Limbs', 'Recurve Limbs', 'http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+    }
 }
 
 class TestSampleProductPage extends WebTestCase {
