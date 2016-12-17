@@ -63,7 +63,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="./images/sas-762bs.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="./images/sas-762bs.jpg" alt="SAS Predator Compound Bow" width="250" height="250" itemprop="image" />
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > A pretty sweet bow </a></h2>
@@ -73,7 +73,7 @@
                             <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
                             <div class="actions">
                                 <div class="button-container">
-                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841" id="2800"> <span>Add to cart</span> </a>
                                 </div>                                           
                             </div>
                         </div>
@@ -85,7 +85,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="./images/Bear-Archery-Legion.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="./images/Bear-Archery-Legion.jpg" alt="Bear Archery Legion Compound Bow" width="250" height="250" itemprop="image" />
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Sneaky Bow </a></h2>
@@ -95,7 +95,7 @@
                             <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
                             <div class="actions">
                                 <div class="button-container">
-                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841" id="2801"> <span>Add to cart</span> </a>
                                 </div>                                           
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="https://s-media-cache-ak0.pinimg.com/originals/e7/e4/f9/e7e4f93ac0467fdfccd83860fc5b5956.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="https://s-media-cache-ak0.pinimg.com/originals/e7/e4/f9/e7e4f93ac0467fdfccd83860fc5b5956.jpg" alt="Quest Radical Realtree Purple Compound Bow" width="250" height="250" itemprop="image" />
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Purple Lightning </a></h2>
@@ -116,7 +116,7 @@
                             <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
                             <div class="actions">
                                 <div class="button-container">
-                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841" id="2802"> <span>Add to cart</span> </a>
                                 </div>                                           
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="./images/super-kodiak.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="./images/super-kodiak.jpg" alt="Super Kodiak Wooden Bow" width="250" height="250" itemprop="image" />
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Boring bow </a></h2>
@@ -137,7 +137,7 @@
                             <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
                             <div class="actions">
                                 <div class="button-container">
-                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841" id="2803"> <span>Add to cart</span> </a>
                                 </div>                                           
                             </div>
                         </div>
@@ -149,7 +149,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="https://images-na.ssl-images-amazon.com/images/I/31660vV4llL._SY300_.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="https://images-na.ssl-images-amazon.com/images/I/31660vV4llL._SY300_.jpg" alt="Bear Archery Wizard Bow" width="250" height="250" itemprop="image" />
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Stick & String </a></h2>
@@ -159,7 +159,7 @@
                             <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
                             <div class="actions">
                                 <div class="button-container">
-                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841" id="2804"> <span>Add to cart</span> </a>
                                 </div>                                           
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="https://xboxliveexperts.files.wordpress.com/2010/07/javelin1.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="https://xboxliveexperts.files.wordpress.com/2010/07/javelin1.jpg" alt="FGM-148 Javelin automatic infrared guidance fire and forget anti-tank missile launcher" width="250" height="250" itemprop="image" />
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Boom Bow </a></h2>
@@ -181,7 +181,7 @@
                             <p class="product-desc" itemprop="description"> What an amazing bow for an amazing price!</p>
                             <div class="actions">
                                 <div class="button-container">
-                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841"> <span>Add to cart</span> </a>
+                                    <a class="button ajax_add_to_cart_button btn btn-default" href="./basket.php" rel="nofollow" title="Add to cart" data-id-product="2841" id="2805"> <span>Add to cart</span> </a>
                                 </div>                                           
                             </div>
                         </div>
