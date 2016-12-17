@@ -4,7 +4,7 @@ require_once('simpletest/web_tester.php');
 
 class TestNavigation extends WebTestCase
 {
-    function checkSingleNavbarLink($startPageAddress, $linkText, $targetPageAddress){
+    function checkSingleLink($startPageAddress, $linkText, $targetPageAddress){
         $this->get($startPageAddress);
         $this->clickLink($linkText);
         $this->assertEqual($this->getUrl(),$targetPageAddress);
@@ -13,19 +13,19 @@ class TestNavigation extends WebTestCase
 
     function checkAllNavbarLinksFromSinglePage($startPageAddress){
         #home link
-        $this->checkSingleNavbarLink($startPageAddress, 'Shooting Style Cover Image', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+        $this->checkSingleLink($startPageAddress, 'Shooting Style Cover Image', 'http://student.computing.dcu.ie/~oconnb47/index.php');
 
         #products link
-        $this->checkSingleNavbarLink($startPageAddress, 'Products', 'http://student.computing.dcu.ie/~oconnb47/products.php');
+        $this->checkSingleLink($startPageAddress, 'Products', 'http://student.computing.dcu.ie/~oconnb47/products.php');
 
         #account link
-        $this->checkSingleNavbarLink($startPageAddress, 'Account', 'http://student.computing.dcu.ie/~oconnb47/account.php');
+        $this->checkSingleLink($startPageAddress, 'Account', 'http://student.computing.dcu.ie/~oconnb47/account.php');
 
         #contact link
-        $this->checkSingleNavbarLink($startPageAddress, 'Contact', 'http://student.computing.dcu.ie/~oconnb47/contact.php');
+        $this->checkSingleLink($startPageAddress, 'Contact', 'http://student.computing.dcu.ie/~oconnb47/contact.php');
 
         #basket link
-        $this->checkSingleNavbarLink($startPageAddress, 'Basket', 'http://student.computing.dcu.ie/~oconnb47/basket.php');
+        $this->checkSingleLink($startPageAddress, 'Basket', 'http://student.computing.dcu.ie/~oconnb47/basket.php');
 
     }
 
@@ -52,6 +52,28 @@ class TestNavigation extends WebTestCase
         $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/404.php');
 
     }
+
+    function testAllBreadCrumbLinks(){
+        #products page
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/products.php', 'Home', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #account page
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/account.php', 'Home', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #contact page
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/contact.php', 'Home', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #basket page
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/basket.php', 'Home', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #404 page
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/404.php', 'Home', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #Sample Product Page, has two breadcrumb links
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/sample-product.php', 'Home', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+        $this->checkSingleLink('http://student.computing.dcu.ie/~oconnb47/sample-product.php', 'Products', 'http://student.computing.dcu.ie/~oconnb47/products.php');
+    }
+
 }
 
 class TestIndexPage extends WebTestCase {
@@ -96,6 +118,18 @@ class TestIndexPage extends WebTestCase {
 
 }
 
+class TestSampleProductPage extends WebTestCase {
+    function testIndexPageLoad() {
+        $this->get('http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+        $this->assertResponse(200);
+    }
 
+    function testAddToCartButton(){
+        $this->get('http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+        $this->clickLink('Add to Cart');
+        $this->assertEqual($this->getUrl(),'http://student.computing.dcu.ie/~oconnb47/basket.php');
+        $this->assertResponse(200);
+    }
+}
 
 ?>
