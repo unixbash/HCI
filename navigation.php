@@ -53,3 +53,10 @@
         </div>
         <!-- /.container -->
     </nav>
+    <!--SEARCH-->
+    <script type="text/javascript">
+        document.getElementById('searchbox').onsubmit = function() {
+            window.location = 'http://www.redbrick.dcu.ie/search?q=site:redbrick.dcu.ie/~minisham/tmp/' + document.getElementById('search_query_top').value;
+            return false;
+        }
+    </script>

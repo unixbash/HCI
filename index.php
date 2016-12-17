@@ -21,19 +21,19 @@
 
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="./images/archery1.jpg" width="100%" alt="Chania">
+                                <img src="./images/archery1.jpg" width="100%" alt="Archer">
                                 <div class="carousel-caption">
                                     <h2>New Competition Dates</h2>
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="./images/archery2.jpg" width="100%" alt="Chania">
+                                <img src="./images/archery2.jpg" width="100%" alt="Arrows">
                                 <div class="carousel-caption">
                                     <h2>All arrows 30% off</h2>
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="./images/archery3.jpg" width="100%" alt="Chania">
+                                <img src="./images/archery3.jpg" width="100%" alt="Targets">
                                 <div class="carousel-caption">
                                     <h2>All targets half price</h2>
                                 </div>
@@ -63,7 +63,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="https://southlandarchery.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/s/a/sas-762bs.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="./images/sas-762bs.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > A pretty sweet bow </a></h2>
@@ -85,7 +85,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="http://bestcompoundbowsource.com/wp-content/uploads/2013/08/Bear-Archery-Legion.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="./images/Bear-Archery-Legion.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Sneaky Bow </a></h2>
@@ -127,7 +127,7 @@
                         <div class="item-inner-product">
                             <div class="product-image">
                                 <a class="product_img_link" href="./sample-product.php" itemprop="url"> 
-                                <img class="product_img" src="http://www.bestrecurvebowguide.com/wp-content/uploads/2013/08/super-kodiak.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
+                                <img class="product_img" src="./images/super-kodiak.jpg" alt="Compound Bow" width="250" height="250" itemprop="image" /> 
                                 </a>                                          
                             </div>
                             <h2 itemprop="name" class="product-name"> <a class="product-name" href="./sample-product.php" itemprop="url" > Boring bow </a></h2>
