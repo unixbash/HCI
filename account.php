@@ -5,7 +5,6 @@
 
 <body>
 
-    <?php include 'banner.php'; ?>
     <?php include 'navigation.php'; ?>
 
     <!-- Page Content -->

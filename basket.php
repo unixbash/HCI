@@ -4,12 +4,10 @@
 <?php include 'head.php'; ?>
 
 <body>
-
-    <?php include 'banner.php'; ?>
     <?php include 'navigation.php'; ?>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container padded10">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
@@ -22,54 +20,48 @@
                     <li class="active">Basket</li>
                 </ol>
             </div>
-        </div>
-        <!-- /.row -->
 
-        <!-- Content Row -->
-        <div class="row">
-            <div class="row padded15">
-                <table class="basket-table">
+            <table class="basket-table">
+            <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Remove</th>
+              </tr>
+            <tbody>
                 <tr>
-                        <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Remove</th>
-                  </tr>
-                <tbody>
-                    <tr>
-                        <td>Bow</td>
-                        <td><input type="number" name="quantity" min="1" max="99"></td>
-                        <td>€399.99</td>
-                        <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
-                    </tr>
-                    <tr>
-                        <td>Arrow</td>
-                        <td><input type="number" name="quantity" min="1" max="99"></td>
-                        <td>€12.99</td>
-                        <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
-                    </tr>
-                    <tr>
-                        <td>Beginner Accessory Kit</td>
-                        <td><input type="number" name="quantity" min="1" max="99"></td>
-                        <td>€49.99</td>
-                        <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
-                    </tr>
-                    <tr>
-                        <td>Archery Kit Bag</td>
-                        <td><input type="number" name="quantity" min="1" max="99"></td>
-                        <td>€59.99</td>
-                        <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
-                    </tr>
-                    
-                </tbody>                   
-                </table>  
-            <div>
-        </div>
+                    <td>Bow</td>
+                    <td><input type="number" name="quantity" value="1" min="1" max="99"></td>
+                    <td>€399.99</td>
+                    <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
+                </tr>
+                <tr>
+                    <td>Arrow</td>
+                    <td><input type="number" name="quantity" value="1" min="1" max="99"></td>
+                    <td>€12.99</td>
+                    <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
+                </tr>
+                <tr>
+                    <td>Beginner Accessory Kit</td>
+                    <td><input type="number" name="quantity" value="1" min="1" max="99"></td>
+                    <td>€49.99</td>
+                    <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
+                </tr>
+                <tr>
+                    <td>Archery Kit Bag</td>
+                    <td><input type="number" name="quantity" value="1" min="1" max="99"></td>
+                    <td>€59.99</td>
+                    <td><a href="#"><img src="./images/garbage-bin.png" width="25" height="25"> </a></td>
+                </tr>
+                
+            </tbody>                   
+            </table>  
+
         <!-- /.row -->
 
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
+
             <div class="col-md-8">
                 <h3>Address <small><a href="#">autofill</a></small></h3>
                 <form name="sentMessage" id="contactForm" novalidate>
@@ -101,12 +93,12 @@
                     </div>
                 </form>
             </div>
-        </div>
+
         <!-- /.row -->
 
         <hr>
         
-        <div class="row">
+ 
             <table class="total-table">
                     <tr>
                         <td><strong>Shipping</strong></td>
@@ -129,12 +121,12 @@
                         </td>
                     </tr>
             </table>
-        </div>
 
-        
 
-    </div>
-    <!-- /.container -->
+       </div> 
+
+</div>    
+<!-- /.container -->
     
     <?php include 'footer.php'; ?>
 
