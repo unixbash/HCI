@@ -1,21 +1,65 @@
 <?php
 require_once('simpletest/autorun.php');
 require_once('simpletest/web_tester.php');
-# require_once('../../index.php');
 
-class TestIndexPage extends WebTestCase { #to run this go to: http://student.computing.dcu.ie/~oconnb47/unit-tests/tests/index-page-test.php
+class TestNavigation extends WebTestCase
+{
+    function checkSingleNavbarLink($startPageAddress, $linkText, $targetPageAddress){
+        $this->get($startPageAddress);
+        $this->clickLink($linkText);
+        $this->assertEqual($this->getUrl(),$targetPageAddress);
+        $this->assertResponse(200);
+    }
+
+    function checkAllNavbarLinksFromSinglePage($startPageAddress){
+        #home link
+        $this->checkSingleNavbarLink($startPageAddress, 'Shooting Style Cover Image', 'http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #products link
+        $this->checkSingleNavbarLink($startPageAddress, 'Products', 'http://student.computing.dcu.ie/~oconnb47/products.php');
+
+        #account link
+        $this->checkSingleNavbarLink($startPageAddress, 'Account', 'http://student.computing.dcu.ie/~oconnb47/account.php');
+
+        #contact link
+        $this->checkSingleNavbarLink($startPageAddress, 'Contact', 'http://student.computing.dcu.ie/~oconnb47/contact.php');
+
+        #basket link
+        $this->checkSingleNavbarLink($startPageAddress, 'Basket', 'http://student.computing.dcu.ie/~oconnb47/basket.php');
+
+    }
+
+    function testAllNavbarLinksFromAllPages(){
+        #index page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/index.php');
+
+        #products page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/products.php');
+
+        #sample product page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/sample-product.php');
+
+        #account page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/account.php');
+
+        #contact page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/contact.php');
+
+        #basket page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/basket.php');
+
+        #404 page
+        $this->checkAllNavbarLinksFromSinglePage('http://student.computing.dcu.ie/~oconnb47/404.php');
+
+    }
+}
+
+class TestIndexPage extends WebTestCase {
     function testIndexPageLoad() {
         $this->get('http://student.computing.dcu.ie/~oconnb47/index.php');
         $this->assertResponse(200);
     }
 
-    function testNavigateToContact(){
-        $this->get('http://student.computing.dcu.ie/~oconnb47/index.php');
-        $this->clickLink('Contact');
-        $this->assertEqual($this->getUrl(),'http://student.computing.dcu.ie/~oconnb47/contact.php');
-        $this->assertResponse(200);
-
-    }
 
     function checkSingleProductLinks($indexPageAddress, $altText, $descriptionText, $productPageAddress, $basketID, $basketPageAddress){
         $this->get($indexPageAddress); #ensure we're starting on the index page
@@ -49,18 +93,6 @@ class TestIndexPage extends WebTestCase { #to run this go to: http://student.com
         #product 6
         $this->checkSingleProductLinks('http://student.computing.dcu.ie/~oconnb47/index.php', 'FGM-148 Javelin automatic infrared guidance fire and forget anti-tank missile launcher', 'Boom Bow','http://student.computing.dcu.ie/~oconnb47/sample-product.php', '2805', 'http://student.computing.dcu.ie/~oconnb47/basket.php');
     }
-
-
-    /*
-# Abandon testing the carousel for the time being.
-    function testCarousel()
-    {
-          $this->get('http://student.computing.dcu.ie/~oconnb47/index.php');
-         $this->assertImage("Chania");
-    }
-*/
-
-
 
 }
 
