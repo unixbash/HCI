@@ -2,7 +2,7 @@
     <div class="row">
         <div class="container-fluid">
         <a href ="./index.php">
-            <img class="img-responsive cover-image" src="./images/cover.jpg"></div>
+            <img class="img-responsive cover-image" src="./images/cover.jpg" alt="Shooting Style Cover Image"></div>
         </a>
     </div>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -23,7 +23,7 @@
                         <a class="menu-elem" href="products.php">Products</a>
                     </li>
                     <li>
-                        <a class="menu-elem" href="account.php">Account </a>
+                        <a class="menu-elem" href="account.php">Account</a>
                     </li>
                     <li>
                         <a  class="menu-elem" href="contact.php">Contact</a>
